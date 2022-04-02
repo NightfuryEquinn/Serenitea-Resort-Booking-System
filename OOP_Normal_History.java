@@ -55,6 +55,15 @@ public class OOP_Normal_History
                     
                     pass++;
                 }
+                else if(searchName.equals(""))
+                {
+                    for(int i = 0; i < fileData.length; i++)
+                    {
+                        tempData[pass][i] = fileData[i];
+                    }
+                    
+                    pass++;
+                }
             }
             
             DefaultTableModel model = (DefaultTableModel) table.getModel();
