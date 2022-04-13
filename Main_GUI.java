@@ -33,6 +33,16 @@ public class Main_GUI extends javax.swing.JFrame {
         
         inputCheckin.setEnabled(false);
         inputCheckout.setEnabled(false);
+        
+        // Disable Room Button by default
+        JPanel[] panelArr = new JPanel[] {SR1, SR2, SR3, SR4, SR5, SR6, SR7, SR8, SR9, SR10, JR1, JR2, JR3, JR4, JR5, JR6, JR7, JR8, JR9, JR10};
+        JButton[] buttonArr = new JButton[] {SR1BTN, SR2BTN, SR3BTN, SR4BTN, SR5BTN, SR6BTN, SR7BTN, SR8BTN, SR9BTN, SR10BTN, JR1BTN, JR2BTN, JR3BTN, JR4BTN, JR5BTN, JR6BTN, JR7BTN, JR8BTN, JR9BTN, JR10BTN};
+        
+        for(int i = 0; i < panelArr.length; i++)
+        {
+            panelArr[i].setEnabled(false);
+            buttonArr[i].setEnabled(false);
+        }
     }
 
     /**
@@ -1348,6 +1358,13 @@ public class Main_GUI extends javax.swing.JFrame {
         // Create array for Label and Button
         JPanel[] panelArr = new JPanel[] {SR1, SR2, SR3, SR4, SR5, SR6, SR7, SR8, SR9, SR10, JR1, JR2, JR3, JR4, JR5, JR6, JR7, JR8, JR9, JR10};
         JButton[] buttonArr = new JButton[] {SR1BTN, SR2BTN, SR3BTN, SR4BTN, SR5BTN, SR6BTN, SR7BTN, SR8BTN, SR9BTN, SR10BTN, JR1BTN, JR2BTN, JR3BTN, JR4BTN, JR5BTN, JR6BTN, JR7BTN, JR8BTN, JR9BTN, JR10BTN};
+        
+        // Enable room button
+        for(int i = 0; i < panelArr.length; i++)
+        {
+            panelArr[i].setEnabled(true);
+            buttonArr[i].setEnabled(true);
+        }
         
         // Filter
         for(int i = 0; i < panelArr.length; i++)
