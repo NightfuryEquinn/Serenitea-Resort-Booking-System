@@ -15,3 +15,7 @@ System name is adapted from a Genshin Impact in-game gadget called Serenitea Pot
 4. Only resort admin will know the username and password of the system and it is totally secure.
 5. Room ID, customer name, and check-in date are used together as a unique key to identify each customer data.
 6. Only one admin can access the system.
+
+<hr/>
+
+### 📂 Read documentation: [Here](https://github.com/NightfuryEquinn/Serenitea-Resort-Booking-System/blob/main/Java%20Full%20Documentation.pdf)
